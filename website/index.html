@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Journal</title>
+</head>
+
+<body>
+    <div class="scrn-1 container active">
+        <button id="reset">Reset</button>
+        <div class="inner-cont">
+            
+            <div class="comment">
+                <h1>Hello Darling,</h1><br>
+                <h2 class="inquiry"> How are you today?</h2>
+                <!-- <input id="feelings" class="mood" type="text" placeholder="Mood" spellcheck="true" autofocus required> -->
+                <textarea id="feelings" class="mood" name="feelings" placeholder="I feel.." cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="nav-big-cont">
+            <div class="nav-cont hide">
+                <i class="fas fa-chevron-left hide left"></i>
+                <ul class="unordList">
+                </ul>
+                <i class="fas fa-chevron-right hide right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="scrn-2 container">
+        <div class="inner-cont">
+            <h1>Whats it like where you are luv? </h1>
+            <input id="zip" class="zip" type="number" placeholder="enter zip code here" autofocus required>
+            <button id="generate" type="submit">Generate</button>
+        </div>
+    </div>
+
+    <div class="scrn-3 container">
+    </div>
+
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
