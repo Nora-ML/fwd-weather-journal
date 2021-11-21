@@ -27,7 +27,7 @@ function rand(num) {
 
 function date() {
     const date = new Date();
-    const date_formatted = date.getDate() + "-" + date.getMonth() + "-" + date.getUTCFullYear();
+    const date_formatted = date.getMonth() + 1 + "-" + date.getDate() + "-" +  date.getUTCFullYear();
     let min = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
     let hrs = date.getHours();
     const time = hrs > 12 ? hrs - 12 + ":" + min + "pm" : hrs + ":" + min + "am";
